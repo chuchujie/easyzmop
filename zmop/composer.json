@@ -1,0 +1,29 @@
+{
+    "name": "akasha/zmop",
+    "description": "芝麻信用相关接口",
+    "keywords": [
+        "zmop",
+        "zhima",
+        "zhima-sdk",
+        "sdk"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "chuchujie",
+            "email": "yangzhihua21st@gmail.com"
+        }
+    ],
+    "require": {
+        "php":">=5.5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "minimum-stability" : "dev",
+    "autoload": {
+        "psr-4": {
+            "akasha\\zmop": "src/"
+        }
+    }
+}
