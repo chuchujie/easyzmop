@@ -1,1 +1,95 @@
-# Akasha
+<p align="center">
+<a href="https://zmop.org/">
+<img src="https://zmop.org/logo.svg" alt="zmop" width="160">
+</a>
+
+<p align="center">📦 Maybe it well be the best SDK for develop zmop App.</p>
+
+<p align="center">
+<a href="https://travis-ci.org/chuchujie/easyzmop"><img src="https://travis-ci.org/chuchujie/easyzmop.svg?branch=master" alt="Build Status"></a>
+<a href="https://packagist.org/packages/chuchujie/easyzmop"><img src="https://poser.pugx.org/chuchujie/easyzmop/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/chuchujie/easyzmop"><img src="https://poser.pugx.org/chuchujie/easyzmop/v/unstable.svg" alt="Latest Unstable Version"></a>
+<a href="https://scrutinizer-ci.com/g/chuchujie/easyzmop/build-status/master"><img src="https://scrutinizer-ci.com/g/chuchujie/easyzmop/badges/build.png?b=master" alt="Build Status"></a>
+<a href="https://scrutinizer-ci.com/g/chuchujie/easyzmop/?branch=master"><img src="https://scrutinizer-ci.com/g/chuchujie/easyzmop/badges/quality-score.png?b=master" alt="Scrutinizer Code Quality"></a>
+<a href="https://scrutinizer-ci.com/g/chuchujie/easyzmop/?branch=master"><img src="https://scrutinizer-ci.com/g/chuchujie/easyzmop/badges/coverage.png?b=master" alt="Code Coverage"></a>
+<a href="https://packagist.org/packages/chuchujie/easyzmop"><img src="https://poser.pugx.org/chuchujie/easyzmop/downloads" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/chuchujie/easyzmop"><img src="https://poser.pugx.org/chuchujie/easyzmop/license" alt="License"></a>
+</p>
+
+</div>
+
+## Supporting zmop
+
+zmop 是一个 MIT 协议的开源项目. 它的发展离不开背后的支持者。
+
+## Warning
+ - 作者仅有0.5个工作日研究芝麻文档并集成到应用中去，暂不建议直接集成到生产环境；
+ - 本集成芝麻ivs 3.0版本的接口；
+ - 当前版本为beta版本, 作者会持续维护此仓储；
+
+## 目标
+ - 命名不那么乱七八糟；
+ - 隐藏开发者不需要关注的细节；
+ - 方法使用更优雅，不必再去研究那些奇怪的的方法名或者类名是做啥用的；
+ - 自定义缓存方式；
+ - 符合 [PSR](https://github.com/php-fig/fig-standards) 标准，你可以各种方便的与你的框架集成；
+ - 高度抽象的消息类，免去各种拼json与xml的痛苦；
+ - 详细 Debug 日志，一切交互都一目了然；
+ - SDK 对所使用的框架并无特别要求
+
+## Requirement
+
+1. PHP >= 5.5.9
+2. **[composer](https://getcomposer.org/)**
+3. openssl 拓展
+
+## Installation
+
+```shell
+- composer require "akasha/zmop" -vvv
+- Run `php artisan vendor:publish`
+```
+
+## Usage
+
+### 授权:
+
+```
+        //1:按照手机号进行授权 {"mobileNo":"15158657683"}
+        //2:按照身份证+姓名进行授权 {"name":"张三","certType":"IDENTITY_CARD","certNo":"330100xxxxxxxxxxxx"}
+        $request = new ZhimaAuthInfoAuthorizeRequest();
+        $request->setChannel("app");
+        $request->setPlatform("zmop");
+        $req->setIdentityType("2");// 必要参数
+        $req->setIdentityParam("{\"name\":\"张三\",\"certType\":\"IDENTITY_CARD\",\"certNo\":\"330100xxxxxxxxxxxx\"}");// 必要参数
+        $req->setBizParams("{\"auth_code\":\"M_H5\",\"channelType\":\"app\",\"state\":\"商户自定义\"}");//
+        $req->setChannel("app");
+        $req->setPlatform("zmop");
+        $url = Zmop::generatePageRedirectInvokeUrl($req)
+```
+
+### 信用评分:
+
+```
+         $request = new ZhimaCreditScoreGetRequest();
+         $request->setChannel("apppc");
+         $request->setPlatform("zmop");
+         $request->setTransactionId("201512100936588040000000465158");// 必要参数
+         $request->setProductCode("w1010100100000000001");// 必要参数
+         $request->setOpenId("268810000007909449496");// 必要参数
+         $response = Zmop::execute($request);
+         echo json_encode($response);
+```
+## Config
+
+set the options in **config/zmop.php** ,
+
+## Documention
+
+- Homepage: https://b.zmxy.com.cn/technology/openDoc.htm?LEFT_MENU_MODE=LEFT_BLANK&productId=w1010100200000000001-all
+
+> 强烈建议看懂芝麻信用文档后再来使用本 SDK。
+
+## License
+
+MIT
