@@ -2,22 +2,6 @@
 <a href="https://zmop.org/">
 <img src="https://zmop.org/logo.svg" alt="zmop" width="160">
 </a>
-
-<<<<<<< HEAD
-<p align="center">📦 Maybe it well be the best SDK for develop zmop App.</p>
-
-<p align="center">
-<a href="https://travis-ci.org/chuchujie/easyzmop"><img src="https://travis-ci.org/chuchujie/easyzmop.svg?branch=master" alt="Build Status"></a>
-<a href="https://packagist.org/packages/chuchujie/easyzmop"><img src="https://poser.pugx.org/chuchujie/easyzmop/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/chuchujie/easyzmop"><img src="https://poser.pugx.org/chuchujie/easyzmop/v/unstable.svg" alt="Latest Unstable Version"></a>
-<a href="https://scrutinizer-ci.com/g/chuchujie/easyzmop/build-status/master"><img src="https://scrutinizer-ci.com/g/chuchujie/easyzmop/badges/build.png?b=master" alt="Build Status"></a>
-<a href="https://scrutinizer-ci.com/g/chuchujie/easyzmop/?branch=master"><img src="https://scrutinizer-ci.com/g/chuchujie/easyzmop/badges/quality-score.png?b=master" alt="Scrutinizer Code Quality"></a>
-<a href="https://scrutinizer-ci.com/g/chuchujie/easyzmop/?branch=master"><img src="https://scrutinizer-ci.com/g/chuchujie/easyzmop/badges/coverage.png?b=master" alt="Code Coverage"></a>
-<a href="https://packagist.org/packages/chuchujie/easyzmop"><img src="https://poser.pugx.org/chuchujie/easyzmop/downloads" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/chuchujie/easyzmop"><img src="https://poser.pugx.org/chuchujie/easyzmop/license" alt="License"></a>
-=======
-<p align="center">📦 Maybe it is the best SDK for develop zmop App.</p>
-
 <p align="center">
 <a href="https://travis-ci.org/overtrue/wechat"><img src="https://travis-ci.org/overtrue/wechat.svg?branch=master" alt="Build Status"></a>
 <a href="https://packagist.org/packages/overtrue/wechat"><img src="https://poser.pugx.org/overtrue/wechat/v/stable.svg" alt="Latest Stable Version"></a>
@@ -27,7 +11,6 @@
 <a href="https://scrutinizer-ci.com/g/overtrue/wechat/?branch=master"><img src="https://scrutinizer-ci.com/g/overtrue/wechat/badges/coverage.png?b=master" alt="Code Coverage"></a>
 <a href="https://packagist.org/packages/overtrue/wechat"><img src="https://poser.pugx.org/overtrue/wechat/downloads" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/overtrue/wechat"><img src="https://poser.pugx.org/overtrue/wechat/license" alt="License"></a>
->>>>>>> f61c90daf6ffa8cc56ee0980b2930cb8601d242e
 </p>
 
 </div>
@@ -36,19 +19,12 @@
 
 zmop 是一个 MIT 协议的开源项目. 它的发展离不开背后的支持者。
 
-<<<<<<< HEAD
 ## Warning
  - 作者仅有0.5个工作日研究芝麻文档并集成到应用中去，暂不建议直接集成到生产环境；
  - 本集成芝麻ivs 3.0版本的接口；
  - 当前版本为beta版本, 作者会持续维护此仓储；
 
 ## 目标
-=======
-特别感谢他们的慷慨赞助:
-
-<a href="https://laravist.com">
-  <img width="160" src="https://o0dpls1ru.qnssl.com/laravist.com-logo.png">
-</a>
 
 ## Feature
 
