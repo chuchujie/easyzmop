@@ -1,8 +1,9 @@
 {
-    "name": "akasha/zmop",
+    "name": "easyzmop/zhima",
     "description": "芝麻信用相关接口",
     "keywords": [
         "zmop",
+        "easyzmop",
         "zhima",
         "zhima-sdk",
         "sdk"
@@ -23,7 +24,7 @@
     "minimum-stability" : "dev",
     "autoload": {
         "psr-4": {
-            "akasha\\zmop": "src/"
+            "EasyZmop\\Zhima": "src/"
         }
     }
 }
