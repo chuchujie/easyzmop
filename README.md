@@ -34,7 +34,6 @@ zmop 是一个 MIT 协议的开源项目. 它的发展离不开背后的支持�
  - 自定义缓存方式；
  - 符合 [PSR](https://github.com/php-fig/fig-standards) 标准，你可以各种方便的与你的框架集成；
  - 高度抽象的消息类，免去各种拼json与xml的痛苦；
- - 详细 Debug 日志，一切交互都一目了然；
 
 ## Requirement
 
@@ -42,7 +41,6 @@ zmop 是一个 MIT 协议的开源项目. 它的发展离不开背后的支持�
 2. **[composer](https://getcomposer.org/)**
 3. openssl 拓展
 
-> SDK 对所使用的框架并无特别要求
 
 ## Installation
 
