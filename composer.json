@@ -24,7 +24,7 @@
     "minimum-stability" : "dev",
     "autoload": {
         "psr-4": {
-            "EasyZmop\\Zhima": "src/"
+            "EasyZmop\\Zhima\\": "src/"
         }
     }
 }
