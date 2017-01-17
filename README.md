@@ -47,7 +47,7 @@ zmop 是一个 MIT 协议的开源项目. 它的发展离不开背后的支持�
 ## Installation
 
 ```shell
-- composer require "akasha/zmop" -vvv
+- composer require "easyzmop/zhima" -vvv
 - Run `php artisan vendor:publish`
 ```
 
